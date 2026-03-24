@@ -22,7 +22,6 @@ CTestTestfile.cmake
 _deps/
 
 # Compiled binaries
-*.exe
 *.dll
 *.so
 *.dylib
@@ -31,6 +30,11 @@ _deps/
 *.ilk
 *.pdb
 *.pch
+
+# Executables (except release folder)
+out/**/*.exe
+*.exe
+!release/*.exe
 
 # Backup files
 *.bak
